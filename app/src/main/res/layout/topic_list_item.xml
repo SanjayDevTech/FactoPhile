@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topic_layout"
+    android:layout_width="160dp"
+    android:layout_height="180dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="6dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="6dp">
+
+    <ImageView
+        android:id="@+id/img_topic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient" />
+
+    <TextView
+        android:id="@+id/title_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        tools:text="TextView" />
+</androidx.cardview.widget.CardView>
